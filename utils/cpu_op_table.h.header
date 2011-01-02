@@ -1,0 +1,6 @@
+#ifndef __CPU_OP_TABLE_H__
+#define __CPU_OP_TABLE_H__
+
+#include "cpu.h"
+#include "cpu_op.h"
+

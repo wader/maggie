@@ -1,0 +1,30 @@
+Maggie, a GNU GameBoy Emulator
+(c)2001 Mattias Wadman <napolium@sudac.org>
+See COPYING for license information.
+
+What you need:
+You will need at lest one of them.
+SDL (http://www.libsdl.org) (recommended)
+Allegro (http://www.talula.demon.co.uk/allegro/)
+
+How to install:
+Go to the "src" directory and type "make".
+
+Whats included:
+src/		The emulator source.
+utils/		A GameBoy ROM disassembler and scripts used to generate opcode tables etc.
+utils/data/	Opcode tables.
+
+Other GNU GameBoy emulators:
+gnuboy, http://www.starfox.com/gnuboy/
+xgb, http://sourceforge.net/projects/xgb
+cingb, http://cingb.sourceforge.net/
+gngb, http://frogus.multimania.com/gngb.html
+
+Thanks to:
+All people who have written GameBoy tech documentation.
+The gnuboy team
+The GBE/XGB team
+
+Feel free to send questions, Have fun!
+-Mattias

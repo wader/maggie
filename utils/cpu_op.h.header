@@ -1,0 +1,26 @@
+#ifndef __CPU_OP_H__
+#define __CPU_OP_H__
+
+struct cpu_op
+{
+	void (*function)(void);
+	int parm1_size;
+	int parm1_data;
+	int parm2_size;
+	int parm2_data;
+	int cycles;
+};
+
+struct cpu_op *cpu_op_current;
+
+// used to pass paramters
+unsigned short cpu_op_p1_16;
+unsigned short cpu_op_p2_16;
+unsigned char cpu_op_p1;
+unsigned char cpu_op_p2;
+
+// used as temporary variables
+unsigned short cpu_op_t1_16;
+unsigned char cpu_op_t1;
+unsigned char cpu_op_t2;
+

@@ -1,0 +1,34 @@
+
+Sound:
+envelope, typ uteckling av ljudet över tiden
+
+Serial:
+3.2.6 The link port
+The GB link port is a shift register. It is accessible through memory address location 0xFF01 (shift register) and 0xFF02 (ctrl register). 
+When two Gameboys are connected with a serial cable, the shift registers are connected so that they feed each other, like in Figure 3.7. When one of the Gameboys want to send a byte, it tells the clock generator to generate eight pulses (500kHz), clocking both shift registers making them swap contents. When the transfer is complete, an interrupt is generated in the second Gameboy, so it can handle the received data.
+
+  
+
+Fixes:
+
+memory.c: changed timer interrupt to serial interrupt.. ???!?
+seams to break other stuff? right serial data returned?
+no no no, do no interrupt on sending gameboy?
+
+Allow program generated interrupts requests in IF
+
+Do research:
+
+new pandocs... reg F do not set
+
+ldhl (nn),sp  does it exist?
+
+cartridge: if cgb last title char is cgb flag... new manufact code is others title chars to..
+
+Small staff:
+Add command line parameters. -v for cartridge info?
+
+Big stuff:
+Sound support.
+Serial support over TCP/IP.
+GameBoy color support.

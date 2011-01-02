@@ -1,0 +1,9 @@
+#ifndef __DEBUG_OP_TABLE_H__
+#define __DEBUG_OP_TABLE_H__
+
+struct debug_op
+{
+	char *string;
+	int size;
+};
+

@@ -1,0 +1,3 @@
+Mario2: probably ROM bank switching problem... RET RET to addr 4006... is game data not code..
+
+memory_mbc_model = 0; // is this really default to 0? Zoomar.gb animation works if default is 1
